@@ -1,8 +1,8 @@
-import { getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth/next'
 import { SessionProvider } from '../components/SessionProvider'
 import Sidebar from '../components/Sidebar'
 import '../styles/globals.css'
-import { authOptions } from '@/pages/api/auth/[...nextauth]'
+import { authOptions } from '../src/pages/api/auth/[...nextauth]'
 import Login from '../components/Login'
 
 export const metadata = {
@@ -22,7 +22,6 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <SessionProvider session={session} >
-
           {!session ? (
             <Login />
           ) : (
