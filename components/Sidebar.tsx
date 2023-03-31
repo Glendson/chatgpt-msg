@@ -6,6 +6,7 @@ import NewChat from "./NewChat"
 import { collection, orderBy, query } from "firebase/firestore"
 import { db } from "../firebase"
 import ChatRow from "./ChatRow"
+import ModelSelection from "./ModelSelection"
 
 function Sidebar() {
 
@@ -22,8 +23,8 @@ function Sidebar() {
 
           <NewChat />
 
-          <div>
-            {/* ModelSelection */}
+          <div className="hidden sm:inline">
+            <ModelSelection />
           </div>
 
           {chats?.docs.map(chat => (
