@@ -5,12 +5,12 @@
 ChatGPT  APP V3.5
 </h1>
 
-# Layout
-![Layout](.github/layout.png)
-
 ## About
 This was a clone that I made of the chatGPT website using the chatgpt api version 3.5 and implementing some technologies that I'm studying like 
 firebase, tailwind and SWR.
+
+# Layout
+![Layout](.github/layout.png)
 
 # LogIn Page
 ![LogIN](.github/login.png)
